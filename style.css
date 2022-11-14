@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+.headline
+{
+	text-align: center;
+	font-family: 'Silkscreen', cursive;
+}
+
+body
+{
+	height: 100vh;
+	overflow: hidden;
+	background: radial-gradient(circle at bottom, navy 0, black 100%);
+	color: white;
+	font-family: 'Rubik', sans-serif;
+}
+
+a
+{
+	color:aqua;
+}
+
+
