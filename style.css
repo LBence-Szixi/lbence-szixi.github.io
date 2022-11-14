@@ -18,6 +18,13 @@ body
 	font-family: 'Rubik', sans-serif;
 }
 
+img{
+	width: 100%;
+	height: 20%;
+	max-width: 700px;
+	max-height: 100px;
+}
+
 a
 {
 	color:aqua;
