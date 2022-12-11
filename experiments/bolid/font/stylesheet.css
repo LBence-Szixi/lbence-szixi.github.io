@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Sector 034';
+    src: url('Sector-034.eot');
+    src: url('Sector-034.eot?#iefix') format('embedded-opentype'),
+        url('Sector-034.woff2') format('woff2'),
+        url('Sector-034.woff') format('woff'),
+        url('Sector-034.ttf') format('truetype'),
+        url('Sector-034.svg#Sector-034') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

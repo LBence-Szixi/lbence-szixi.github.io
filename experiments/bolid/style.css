@@ -1,0 +1,28 @@
+@font-face {
+    font-family: sector_034;
+    src: url(font/Sector-034.woff2);
+}
+
+body
+{
+	background-image: url("bg.jpg");
+	background-size:cover;
+}
+
+h1
+{
+	color:white;
+	text-align: center;
+	font-size:4vw;
+    font-family: sector_034;
+    font-weight: normal;
+    font-style: normal;
+	-webkit-text-stroke: 3px black;
+}
+
+canvas{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);               
+}
