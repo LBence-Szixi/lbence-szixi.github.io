@@ -4,10 +4,12 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="navbar.css">
 		<link rel="stylesheet" href="bg.css">
 		<title>LBence Szixi</title>
 	</head>
 	<body>
+		<script src="snow.js"></script>
 
 		<!--Háttér / Background -->
 
@@ -42,24 +44,12 @@
 		<br>
 		<br>
 		
-		<img src="osztaj.jpg" alt="vilák legszeg zibb osztálya"  title="vilák legszeg zibb osztálya">
+		<img class="szegzi" src="osztajxmas.jpg" alt="boldokságos ünnepeket kíván a vilák legszeg zibb osztája"  title="boldokságos ünnepeket kíván a vilák legszeg zibb osztája">
 
 		<br><br><br>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script>
-			function doxx()
-			{
-				$.getJSON('https://api.ipify.org?format=jsonp&callback=?', function(data) {
 
-				$("#doxed").html(JSON.stringify(data, null, 2));
-				})
-			}
 
-		</script>
-
-		<h2 class="doxed">Doxoljalak he?</h2>
-		<button onclick="doxx();">Doxx me daddy</button>
 
 	</body>
 </html>
