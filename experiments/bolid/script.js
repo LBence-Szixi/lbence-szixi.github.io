@@ -34,14 +34,22 @@ function collideObject(x,y,width,height)
 function drawStars()
 {
 	var i;
-	
+
 	ctx.lineWidth=4;
-	ctx.strokeStyle="white";
-	ctx.fillStyle = "white";
+
 	for(i=0;i<30;++i)
 	{
+
+		ctx.strokeStyle="yellow";
+		ctx.fillStyle = "yellow";
 		ctx.beginPath();ctx.moveTo(lassu[i][1],lassu[i][0]);ctx.lineTo(lassu[i][1]+1,lassu[i][0]+1);ctx.stroke();
+
+		ctx.strokeStyle="white";
+		ctx.fillStyle = "white";
 		ctx.beginPath();ctx.moveTo(kozepes[i][1],kozepes[i][0]);ctx.lineTo(kozepes[i][1]+1,kozepes[i][0]+1);ctx.stroke();
+
+		ctx.strokeStyle="#2b6fff";
+		ctx.fillStyle = "#2b6fff";
 		ctx.beginPath();ctx.moveTo(gyors[i][1],gyors[i][0]);ctx.lineTo(gyors[i][1]+1,gyors[i][0]+1);ctx.stroke();
 		lassu[i][1]-=sebesseg;
 		kozepes[i][1]-=sebesseg*2;
@@ -140,9 +148,12 @@ var player = {
 
 	render: function()
 	{
+		ctx.imageSmoothingEnabled = false;
 		/*ctx.fillStyle = "green";
 		ctx.fillRect(player.x,player.y,player.width,player.height);*/
 		putImg("player.png",this.x,this.y,this.width,this.height);
+		ctx.imageSmoothingEnabled = true;
+
 	},
 
 	move: function()
@@ -199,7 +210,7 @@ var world = {
 	render: function(){
 
 
-
+		ctx.imageSmoothingEnabled = false;
 		//Render objects
 		for(index in this.tiles)
 		{
@@ -208,6 +219,8 @@ var world = {
 			ctx.fillRect(tile.x,tile.y,tile.width,tile.height);*/
 			putImg("meteorite.png",tile.x,tile.y,tile.width,tile.height);
 		}
+		ctx.imageSmoothingEnabled = true;
+
 
 		ctx.fillStyle = "white";
 		ctx.font = "28px Arial";
