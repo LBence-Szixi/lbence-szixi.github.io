@@ -3,12 +3,16 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://unpkg.com/98.css">
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="bg.css">
+		<link rel="stylesheet" href="bros.css">
+		<link rel="stylesheet" type="text/css" href="https://gitcdn.xyz/repo/pi0/clippyjs/master/assets/clippy.css">
 		<title>LBence Szixi</title>
 	</head>
 	<body>
 		<script src="snow.js"></script>
+		
 		<!--Háttér / Background -->
 
 		<div class="space stars1"></div>
@@ -17,15 +21,25 @@
 
 		<!--Cuccok / Stuff -->
 
-		<h1 class="headline">Osztályi oldalak 😎🥶😉💯</h1>
-		<p>Szia uram! Olcsó nem lopott alig használt linkek nem érdekelnek?</p>
-		<div style="text-align: center;">
-			<a class="glow-on-hover" href="http://laky730.nhely.hu">A fő oldalam (kicsit több minden van rajta 😉)</a>
-			<a class="glow-on-hover" href="https://endzsol.github.io/">Angel Kristóf oldala (laky certified 👍💯😎)</a>
-			<a class="glow-on-hover" href="https://quackedup.github.io/Sziloo/">Vajda oldala (loptam a linket angel oldaláról 🥶)</a>
-			<a class="glow-on-hover" href="http://szixinet.nhely.hu">A SzixiNet!!!</a>
-			
-		</div>
+		<h1 class="headline" style="font-size: 3em">Osztályi oldalak 😎🥶😉💯</h1>
+		<p style="font-size: 16px;">Szia uram! Olcsó nem lopott alig használt linkek nem érdekelnek?</p>
+
+		<div class="window" style="text-align: center; width: 1200px; font-size:16px;">
+			<div class="title-bar">
+			  <div style="font-size:16px;" class="title-bar-text">Oldalak osztálytársaktól</div>
+			  <div class="title-bar-controls">
+				<button style="font-size:16px;" aria-label="Minimize"></button>
+				<button style="font-size:16px;" aria-label="Maximize"></button>
+				<button style="font-size:16px;" aria-label="Close"></button>
+			  </div>
+			</div>
+			<div class="window-body">
+				<button  style="font-size:16px;"  onclick="location.href='http://laky730.nhely.hu'" type="button">A fő oldalam (kicsit több minden van rajta 😉)</button>
+				<button  style="font-size:16px;" onclick="location.href='https://endzsol.github.io/'" type="button">Angel Kristóf oldala (laky certified 👍💯😎)</button>
+				<button  style="font-size:16px;" onclick="location.href='https://quackedup.github.io/Sziloo/'" type="button">Vajda oldala (loptam a linket angel oldaláról 🥶)</button>
+				<button  style="font-size:16px;" onclick="location.href='http://szixinet.nhely.hu'" type="button">A SzixiNet!!!</button>
+			</div>
+		  </div>
 
 		<br>
 		<br>
@@ -33,5 +47,16 @@
 		<br>
 		
 		<img class="endzsol" src="endzsol.jpg" alt="Endzsöl"  title="jur velkám endzsöl ;)">
+
+		<script src="https://unpkg.com/jquery@3.2.1"></script>
+
+		<script src="https://unpkg.com/clippyjs@latest"></script>
+
+		<script type="text/javascript">
+			clippy.load('Clippy', function(agent){
+				agent.show();
+				agent.speak('When all else fails, bind some paper together. My name is Clippy.');
+			});
+		</script>
 	</body>
 </html>

@@ -12,7 +12,7 @@ function initArray() {
 	  "Melánia","Ágota","Ernő","Veronika","Bódog","Lóránt, Loránd",
 	  "Gusztáv","Antal, Antónia","Piroska","Sára, Márió","Fábián, Sebestyén",
 	  "Ágnes","Vince, Artúr","Zelma, Rajmund","Timót","Pál","Vanda, Paula",
-	  "Angelika","Károly, Karola","Adél","Martina, Gerda","Marcella","")
+	  "Angelika","Károly, Karola","Adél","Martina és Gerda","Marcella","")
 	}
     
 	if (ho==2)
@@ -143,7 +143,7 @@ function initArray() {
 	var ho = (ido.getMonth()+1);
 	var nap = ido.getDate();
 	var evStr = ev.toString();
-	var napStr = (ido.getMonth()+1).toString();
+	var napStr = (ido.getDate()).toString();
 
 	document.getElementById("nameday").innerHTML = '' +  evStr + '.' +  honev(ho) + ' ' + napStr + '. ' + napnev(ido.getDay()+1) + '. Tegnap ' + havinev(ev, ho, nap-1) + ' ünnepelte, ma ' + havinev(ev, ho, nap) + ', holnap ' + havinev(ev,ho, nap+1) + ' ünnepli a névnapját.';
    }
