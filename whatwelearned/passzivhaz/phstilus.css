@@ -1,0 +1,102 @@
+﻿body {
+	font-size: 11pt;
+	margin: 0px;
+	padding: 0px;
+	background-image: url("bg.png");
+	font-family: Verdana,sans-serif;
+}
+
+p{
+	color:black;
+}
+
+hr {
+	
+}
+
+h1, h2 {
+	
+}
+
+h2 {
+	
+}
+
+img
+{
+	border:1px solid black;
+}
+
+#tartalom {
+	margin: 0 auto 0 auto;
+	text-align: left;
+	width: 850px;
+	padding-left: 10px;
+	padding-right: 10px;
+	align-items: center;
+	background-color: white;
+}
+
+#nev{
+	font-size: 16px;
+	font-style:italic;
+}
+
+
+.kep {
+	
+	margin-left: 5px;
+}
+
+a:link {
+	color:#008080;
+}
+
+a:hover
+{
+	color:#008080;
+}
+
+
+a:visited
+{
+	color:#008080;
+}
+
+.gomb_k
+{
+	max-width:100px;
+	max-height:20px;
+	width:20vw;
+	height:50vw;
+	background-color: rgb(0, 0, 105);
+	padding: 20px;
+	text-align: center;
+	vertical-align: middle;
+	transition-duration: .2s;
+	font-size: larger;
+	position: fixed;
+	left:0px;
+	top:0px;
+}
+
+.gomb_k:hover
+{
+	background-color: rgb(0, 0, 184);
+	transition-duration: .2s;
+}
+
+.gomb_b
+{
+	color:white;
+}
+
+.gomb_b:hover
+{
+	color:white;
+}
+
+.gomb_b:visited
+{
+	color:white;
+}
