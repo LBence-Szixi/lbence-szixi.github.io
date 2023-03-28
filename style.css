@@ -14,7 +14,11 @@ body
 	height: 100vh;
 	overflow: hidden;
 	
-	background: radial-gradient(circle at bottom, navy 0, black 100%);
+	background: radial-gradient(circle, rgba(0, 0, 128, 0.644) 0, rgba(0, 0, 0, 0.979) 90%),url("bg.jpg");
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 	color: white;
 	font-family: 'Rubik', sans-serif;
 }
@@ -115,4 +119,17 @@ th, td {
 	padding:20px;
 	background: rgba(150, 212, 212, 0.56);
 	backdrop-filter: blur(2.6px);
+}
+
+.floating { 
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
 }
